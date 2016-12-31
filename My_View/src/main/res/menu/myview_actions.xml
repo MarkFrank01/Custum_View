@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/to_page_one"
+        android:icon="@drawable/ic_list"
+        android:title="PageOne"/>
+    <item
+        android:id="@+id/to_page_two"
+        android:icon="@drawable/ic_list"
+        android:title="PageTwo"/>
+    <item
+        android:id="@+id/back_to_home"
+        android:icon="@drawable/ic_list"
+        android:title="Back"/>
+
+</menu>
