@@ -12,11 +12,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 
 import com.wjc.learn.R;
-import com.wjc.learn.data.MorePageModel;
+import com.wjc.learn.data.MorePages;
 import com.wjc.learn.data.PageModel;
 import com.wjc.learn.login.LoginActivity;
 
@@ -42,8 +41,8 @@ public class BaseViewActivity extends AppCompatActivity {
     List<PageModel> pageModels = new ArrayList<>();
 
     {
-        pageModels.add(new PageModel(R.layout.sample_color, R.layout.practice_color, R.string.title_draw_color));
-        pageModels.add(new PageModel(R.layout.sample_circle, R.layout.practice_circle, R.string.title_draw_circle));
+        pageModels.add(new PageModel(R.layout.sample_color, R.layout.draw_basal_practice_color, R.string.title_draw_color));
+        pageModels.add(new PageModel(R.layout.sample_circle, R.layout.draw_basal_practice_circle, R.string.title_draw_circle));
 
     }
     private static final String KEY_NAV_ITEM = "CURRENT_NAV_ITEM";
@@ -60,7 +59,7 @@ public class BaseViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base_view);
 
-        Log.e("getData", MorePageModel.getData().size()+"+AAAAA");
+        Log.e("AAAAA", MorePages.draw_basal().size()+"XXXX");
 
         // Set up the toolbar.
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -85,8 +84,7 @@ public class BaseViewActivity extends AppCompatActivity {
         } else {
             baseViewFragment = (BaseViewFragment) getSupportFragmentManager().findFragmentById(R.id.content_main);
             if (savedInstanceState == null) {
-//                baseViewFragment = BaseViewFragment.newInstance();
-                baseViewFragment = BaseViewFragment.newInstance2(pageModels);
+                baseViewFragment = BaseViewFragment.newInstance2(MorePages.draw_basal());
             }
 
             baseViewFragment2 = (BaseViewFragment2) getSupportFragmentManager().findFragmentById(R.id.content_main);
@@ -95,25 +93,8 @@ public class BaseViewActivity extends AppCompatActivity {
             }
         }
 
-        if (!baseViewFragment.isAdded()) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.content_main, baseViewFragment, "baseViewFragment")
-                    .commit();
-        }
 
-        if (!baseViewFragment2.isAdded()) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.content_main, baseViewFragment2, "baseViewFragment2")
-                    .commit();
-        }
-
-//        new FirstPresenter(firstFragment, new ToFindItemsInteractorImpl());
-
-        if (selectedNavItem == 0) {
-            showBaseViewFragment();
-        } else if (selectedNavItem == 1) {
-            showBaseViewFragment2();
-        }
+        showBaseViewFragment();
 
     }
 
@@ -138,29 +119,6 @@ public class BaseViewActivity extends AppCompatActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    /**
-     * Store the state when the activity may be recycled.
-     *
-     * @param outState The state data.
-     */
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        Menu menu = navigationView.getMenu();
-        if (menu.findItem(R.id.one).isChecked()) {
-            outState.putInt(KEY_NAV_ITEM, 0);
-        } else if (menu.findItem(R.id.two).isChecked()) {
-            outState.putInt(KEY_NAV_ITEM, 1);
-        }
-        // Store the fragments' states.
-        if (baseViewFragment.isAdded()) {
-            getSupportFragmentManager().putFragment(outState, "BaseViewFragment", baseViewFragment);
-        }
-        if (baseViewFragment2.isAdded()) {
-            getSupportFragmentManager().putFragment(outState, "BaseViewFragment2", baseViewFragment2);
-        }
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
@@ -191,6 +149,13 @@ public class BaseViewActivity extends AppCompatActivity {
     }
 
     private void showBaseViewFragment() {
+
+        if (!baseViewFragment.isAdded()) {
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.content_main, baseViewFragment, "baseViewFragment")
+                    .commit();
+        }
+
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.show(baseViewFragment);
         fragmentTransaction.hide(baseViewFragment2);
@@ -200,6 +165,13 @@ public class BaseViewActivity extends AppCompatActivity {
     }
 
     private void showBaseViewFragment2() {
+
+        if (!baseViewFragment2.isAdded()) {
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.content_main, baseViewFragment2, "baseViewFragment2")
+                    .commit();
+        }
+
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.show(baseViewFragment2);
         fragmentTransaction.hide(baseViewFragment);

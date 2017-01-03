@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * Project_NAME : todoapp
- * Package_NAME : com.wjc.learn.draw_view.myview1_1
+ * Package_NAME : com.wjc.learn.view.myview1_1
  * File_NAME : BaseViewFragment
  * Created by WJC on 2017/11/7 15:21
  * Describe : TODO
@@ -29,7 +29,7 @@ public class BaseViewFragment2 extends Fragment{
     private TabLayout tabLayout;
     private ViewPager viewPager;
     List<PageModel> pageModels = new ArrayList<>();{
-        pageModels.add(new PageModel(R.layout.sample_circle,R.layout.practice_circle,R.string.title_draw_circle));
+        pageModels.add(new PageModel(R.layout.sample_circle,R.layout.draw_basal_practice_circle,R.string.title_draw_circle));
     }
 
     public static BaseViewFragment2 newInstance(){

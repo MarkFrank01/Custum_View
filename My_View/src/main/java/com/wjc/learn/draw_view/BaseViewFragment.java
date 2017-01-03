@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * Project_NAME : todoapp
- * Package_NAME : com.wjc.learn.draw_view.myview1_1
+ * Package_NAME : com.wjc.learn.view.myview1_1
  * File_NAME : BaseViewFragment
  * Created by WJC on 2017/11/7 15:11
  * Describe : TODO

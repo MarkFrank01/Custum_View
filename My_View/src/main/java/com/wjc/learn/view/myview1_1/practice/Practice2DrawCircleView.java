@@ -1,4 +1,4 @@
-package com.wjc.learn.draw_view.myview1_1.practice;
+package com.wjc.learn.view.myview1_1.practice;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -10,7 +10,7 @@ import android.view.View;
 
 /**
  * Project_NAME : todoapp
- * Package_NAME : com.wjc.learn.draw_view.myview1_1
+ * Package_NAME : com.wjc.learn.view.myview1_1
  * File_NAME : Practice02Rotation
  * Created by WJC on 2017/11/7 19:59
  * Describe : TODO

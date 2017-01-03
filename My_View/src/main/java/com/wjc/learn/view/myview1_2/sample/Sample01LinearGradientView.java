@@ -1,4 +1,4 @@
-package com.wjc.learn.draw_view.myview1_2.sample;
+package com.wjc.learn.view.myview1_2.sample;
 
 import android.content.Context;
 import android.graphics.Canvas;
