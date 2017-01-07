@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wjc.learn.view.myview1_1.practice.Practice11PieChatView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                             android:id="@+id/cir_point"
+                                                             android:layout_width="240dp"
+                                                             android:layout_height="200dp"
+                                                             android:layout_gravity="center"
+                                                             android:layout_marginBottom="20px"
+                                                             android:layout_marginTop="-80px"
+                                                             app:mFirstPoint="10"
+                                                             app:mFirstPointColor="@color/colorAccent"
+                                                             app:mLinewith="5dp"
+                                                             app:mPointTextsize="14sp"
+                                                             app:mRaduis="60dp"
+                                                             app:mSecondPointColor="@color/colorPrimary"
+                                                             app:mStokeColor="@color/colorPrimaryDark"
+                                                             app:mTextColor="@color/colorPrimary"/>
+
