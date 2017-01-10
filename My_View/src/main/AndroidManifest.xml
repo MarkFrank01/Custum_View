@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".login.LoginActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".draw_view.BaseViewActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".view.test_view.sample.PieActivity"/>
+
+
+        <activity android:name=".view.test_view.sample.leaf.LeafActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -17,9 +32,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".draw_view.BaseViewActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
-        </activity>
     </application>
 
 </manifest>

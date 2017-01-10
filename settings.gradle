@@ -1,1 +1,1 @@
-include ':My_View'
+include ':My_View', ':ThumbUpSample-master', ':HongyangView'

@@ -31,6 +31,20 @@ public class MorePages {
             pageModels.add(new PageModel(R.layout.sample_path,R.layout.draw_basal_path,R.string.title_draw_path));
             pageModels.add(new PageModel(R.layout.sample_histogram,R.layout.draw_basal_histogram,R.string.title_draw_histogram));
             pageModels.add(new PageModel(R.layout.sample_pie_chart,R.layout.draw_basal_pie_chart,R.string.title_draw_pie_chart));
+
+        }
+        return pageModels;
+    }
+
+    //1.2自己练习
+    public static List<PageModel> draw_myself(){
+        List<PageModel> pageModels = new ArrayList<>();
+        {
+            pageModels.add(new PageModel(R.layout.my_view01,R.layout.my_pview01,R.string.app_name));
+            pageModels.add(new PageModel(R.layout.my_view02,R.layout.my_pview02,R.string.app_name));
+            pageModels.add(new PageModel(R.layout.custom_scale,R.layout.none_view,R.string.app_name));
+            pageModels.add(new PageModel(R.layout.custom_rotate,R.layout.none_view,R.string.app_name));
+            pageModels.add(new PageModel(R.layout.custom_skew,R.layout.none_view,R.string.app_name));
         }
         return pageModels;
     }

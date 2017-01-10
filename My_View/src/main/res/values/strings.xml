@@ -55,5 +55,12 @@
     <string name="title_draw_histogram">直方图</string>
     <string name="title_draw_pie_chart">饼图</string>
 
+    //Leaf
+    <string name="current_mplitude">Modify amplitude, current: %1$s</string>
+    <string name="current_Disparity">Modify amplitude gap, current: %1$s</string>
+    <string name="current_float_time">Modify movement speed, current: %1$s</string>
+    <string name="current_rotate_time">Modify rotation speed, current: %1$s</string>
+    <string name="delete_progress_btn_text">Clean up progress</string>
+    <string name="increase_the_progress_btn_text">Increase the progress： </string>
 
 </resources>

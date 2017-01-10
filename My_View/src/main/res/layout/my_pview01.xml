@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="练习自定义TextView"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"/>
+
+    <com.wjc.learn.view.test_view.practice.TCustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="4dp"
+        android:layout_marginTop="10dp"
+        custom:titleText="1234"
+        custom:titleTextSize="40sp"
+        custom:titleTextColor="@android:color/holo_red_dark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本身TextView"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="3dp"
+        android:text="5678"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"/>
+</LinearLayout>

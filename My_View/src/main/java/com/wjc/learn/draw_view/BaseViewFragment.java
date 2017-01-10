@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.wjc.learn.R;
 import com.wjc.learn.data.PageModel;
+import com.wjc.learn.view.test_view.sample.CustomCircle;
 
 import java.io.Serializable;
 import java.util.List;
@@ -86,6 +87,5 @@ public class BaseViewFragment extends Fragment{
         tabLayout.setupWithViewPager(viewPager);
         return view;
     }
-
 
 }

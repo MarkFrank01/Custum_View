@@ -38,17 +38,6 @@ public class BaseViewActivity extends AppCompatActivity {
     private BaseViewFragment baseViewFragment;
     private BaseViewFragment2 baseViewFragment2;
 
-    List<PageModel> pageModels = new ArrayList<>();
-
-    {
-        pageModels.add(new PageModel(R.layout.sample_color, R.layout.draw_basal_practice_color, R.string.title_draw_color));
-        pageModels.add(new PageModel(R.layout.sample_circle, R.layout.draw_basal_practice_circle, R.string.title_draw_circle));
-
-    }
-    private static final String KEY_NAV_ITEM = "CURRENT_NAV_ITEM";
-
-    private int selectedNavItem = 0;
-
     public static Intent getStartIntent(Context context) {
         Intent intent = new Intent(context, BaseViewActivity.class);
         return intent;
@@ -89,7 +78,7 @@ public class BaseViewActivity extends AppCompatActivity {
 
             baseViewFragment2 = (BaseViewFragment2) getSupportFragmentManager().findFragmentById(R.id.content_main);
             if (savedInstanceState == null) {
-                baseViewFragment2 = BaseViewFragment2.newInstance();
+                baseViewFragment2 = BaseViewFragment2.newInstance2(MorePages.draw_myself());
             }
         }
 
