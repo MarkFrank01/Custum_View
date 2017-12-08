@@ -45,6 +45,7 @@ public class MorePages {
             pageModels.add(new PageModel(R.layout.custom_scale,R.layout.none_view,R.string.app_name));
             pageModels.add(new PageModel(R.layout.custom_rotate,R.layout.none_view,R.string.app_name));
             pageModels.add(new PageModel(R.layout.custom_skew,R.layout.none_view,R.string.app_name));
+            pageModels.add(new PageModel(R.layout.custom_line,R.layout.none_view,R.string.app_name));
         }
         return pageModels;
     }
