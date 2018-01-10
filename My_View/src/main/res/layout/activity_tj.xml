@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.wjc.learn.view.test_view.sample.TJ_View.TJActivity">
- <com.wjc.learn.view.test_view.sample.TJ_View.TJ_View
+    tools:context="com.wjc.learn.widget.test_view.sample.TJ_View.TJActivity">
+ <com.wjc.learn.widget.test_view.sample.TJ_View.TJ_View
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"/>
 </LinearLayout>

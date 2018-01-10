@@ -2,11 +2,7 @@ package com.wjc.learn.data;
 
 import android.support.annotation.LayoutRes;
 
-import com.wjc.learn.R;
-
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Project_NAME : todoapp
@@ -18,13 +14,13 @@ import java.util.List;
 
 public class PageModel implements Serializable{
     @LayoutRes
-    int sampleLayoutRes;
+    private int sampleLayoutRes;
     @LayoutRes
-    int practiceLayoutRes;
+    private int practiceLayoutRes;
     @LayoutRes
-    int titleRes;
+    private int titleRes;
 
-    public PageModel(int sampleLayoutRes, int practiceLayoutRes, int titleRes) {
+    PageModel(int sampleLayoutRes, int practiceLayoutRes, int titleRes) {
         this.sampleLayoutRes = sampleLayoutRes;
         this.practiceLayoutRes = practiceLayoutRes;
         this.titleRes = titleRes;

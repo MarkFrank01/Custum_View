@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <com.wjc.learn.view.test_view.sample.bezier.bsrThree
+    <com.wjc.learn.widget.test_view.sample.bezier.bsrThree
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_gravity="center"

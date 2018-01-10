@@ -13,7 +13,7 @@
         android:textColor="@android:color/black"
         android:textSize="15sp" />
 
-    <com.wjc.learn.view.test_view.sample.CustomTextView
+    <com.wjc.learn.widget.test_view.sample.CustomTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

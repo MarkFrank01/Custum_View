@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.wjc.learn.view.myview1_1.practice.Practice3DrawRectView xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<com.wjc.learn.widget.myview1_1.Practice3DrawRectView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                      android:orientation="vertical"
+                                                      android:layout_width="match_parent"
+                                                      android:layout_height="match_parent">
 
-</com.wjc.learn.view.myview1_1.practice.Practice3DrawRectView>
+</com.wjc.learn.widget.myview1_1.Practice3DrawRectView>
